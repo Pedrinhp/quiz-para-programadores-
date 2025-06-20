@@ -1,176 +1,183 @@
 <!DOCTYPE html>
-
 <html>
-    <head>
-        <title>Quiz para programadores</title>
-        <link rel="stylesheet" href="style.css">
-        <meta name="description" content="Um quiz interativo pata testar seus conhecimentos">
-        <style>
-          
-        </style>
-    </head>
-    <body>
-        <header>
-            <h1>Quiz interativo para programadores</h1>
-            <p>teste seus conhecimentos em programação e veja qual pontuação você consegue fazer!</p>
-        </header>
-        <main>
-            <!--introdução-->
-            <section>
-                <h2>Sobre esse quiz</h2>
-                    <p><strong>Este quiz</strong> foi desenvolvido para testar seus conhecimentos em programação, como <em>linguagens de programação</em>, conceitos básicos e mais.</p>
-                    <p>Você encontrará diferentes tipos de perguntas, incluindo múltipla escolha, texto e perguntas de data. <br>Desafie-se, com este quiz!</p>
-                    <p>Você poderá encontrar alguns acrônimos, como <abbr title="Hypertext Markup Linguage">HTML</abbr>e <abbr title="Cascading Style Sheets">CSS</abbr>, que são comumente usados em questões relacionadas ao desenvolvimento Web</p>
-            </section>
-            <!--Pergunta1: Múltipla escoha-->
-            <section>
-               <h2>Pergunta 1: Qual linguagem é usada para estruturar páginas web?</h2>
-               <form>
+<head>
+    <title>Quiz para programadores</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Um quiz interativo para testar seus conhecimentos">
+</head>
+<body>
+    <header>
+        <h1>Quiz interativo para programadores</h1>
+        <p>Teste seus conhecimentos em programação e veja qual pontuação você consegue fazer!</p>
+    </header>
+
+    <main>
+        <!-- Introdução -->
+        <section>
+            <h2>Sobre esse quiz</h2>
+            <p><strong>Este quiz</strong> foi desenvolvido para testar seus conhecimentos em programação, como <em>linguagens de programação</em>, conceitos básicos e mais.</p>
+            <p>Você encontrará diferentes tipos de perguntas, incluindo múltipla escolha, texto e perguntas de data. <br>Desafie-se com este quiz!</p>
+            <p>Você poderá encontrar alguns acrônimos, como <abbr title="Hypertext Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>, que são comumente usados em questões relacionadas ao desenvolvimento Web.</p>
+        </section>
+
+        <!-- Pergunta 1 -->
+        <section>
+            <h2>Pergunta 1: Qual linguagem é usada para estruturar páginas web?</h2>
+            <form>
                 <input type="radio" value="Python" id="p1a" name="Pergunta1"> 
                 <label for="p1a">Python</label><br>
-                <input type="radio" value="HTML" id="p1a" name="Pergunta1"> 
-                <label for="p1b">HTML</Html></label><br>
-                <input type="radio" value="Java" id="p1a" name="Pergunta1"> 
+                <input type="radio" value="HTML" id="p1b" name="Pergunta1"> 
+                <label for="p1b">HTML</label><br>
+                <input type="radio" value="Java" id="p1c" name="Pergunta1"> 
                 <label for="p1c">Java</label><br>
-                <input type="radio" value="Ruby" id="p1a" name="Pergunta1"> 
+                <input type="radio" value="Ruby" id="p1d" name="Pergunta1"> 
                 <label for="p1d">Ruby</label><br>
-               </form>
-            </section>
-            <!--Pergunta2: O texto-->
-            <section>
-                <h2>Na Url: https://www.google.com o trecho "google.com" é o __</h2>
-                <form>
-                    <input type="text" name="Pergunta2" id="p2" placeholder="Digite sua resposta...">
-                </form>
-            </section>
-            <!--Pergunta3: senha-->
-            <section>
-                <h2>Pergunta3: Escreva um exemplo de senha forte</h2>
-                <form>
-                    <input type="password" id="p3" name="Pergunta3" placeholder="Digite uma senha">
-                </form>
-            </section>
-            <!--Pergunta4: Data-->
-            <section>
-                <h2>Pergunta4: Em que ano o HTML lançou sua primeira versão?</h2>
-                <form>
-                    <input type="date" name="Pergunta4" id="p4">
-                </form>
-            </section>
-            <!--Pergunta5: Seleção múltipla-->
-            <section> 
-                <form>
-                    <h2>Pergunta5: Quais dessas tecnologias são consideradas linguagens de programação</h2>
-                    <input type="checkbox" name="pergunta5" id="p5a" value="Javascript">
-                    <label for="p5a">Javascript</label>
-                    <input type="checkbox" name="pergunta5" id="p5a" value="Java">
-                    <label for="p5b">Java</label>
-                    <input type="checkbox" name="pergunta5" id="p5a" value="HTML">
-                    <label for="p5c">HTML</label>
-                    <input type="checkbox" name="pergunta5" id="p5a" value="CSS">
-                    <label for="p5d">CSS</label>
-                </form>
-            </section>
-            <!--Pergunta6: upload de arquivo -->
-            <section>
-                <h2>Pergunta6: Faça o upload de um arquivo contendo código HTML</h2>
-                <form>
-                    <input type="file" id="p6" name="Pergunta6">
-                </form>
-            </section>
-            <!--Pergunta7: menu suspenso-->
-            <section>
-                <h2>Pergunta7: selecione o atributo do input que define o seu tipo</h2>
-                <form>
-                    <select name="Pergunta7" id="p7">
-                        <option value="id">id</option>
-                        <option value="type">type</option>
-                        <option value="placeholder">placeholder</option>
-                    </select>
-                </form>
-            </section>
-            <!--Pergunta8: imagem-->
-            <section>
-                <h2>Pergunts8: Qual linguagem de programação é representada pelo logotipo abaixo</h2>
-                <figure>
-                <img src="data:image/png;base64,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"alt="Logotipo de uma linguagem de programação"><br>
-                <figcaption>Figura1: Logotipo de uma linguagem de programação</figcaption>
-                </figure>
-                <input type="text" name="Pergunta8" id="p8" placeholder="Digite sua resposta">
-            </section>
-            <!--Tabela de pontuação-->
-            <section>
-                <h2>Tabela de pontuação</h2>
-                <table border="1">
-                    <thead>
-                      <tr>
+            </form>
+        </section>
+
+        <!-- Pergunta 2 -->
+        <section>
+            <h2>Na URL: https://www.google.com o trecho "google.com" é o __</h2>
+            <form>
+                <input type="text" name="Pergunta2" id="p2" placeholder="Digite sua resposta...">
+            </form>
+        </section>
+
+        <!-- Pergunta 3 -->
+        <section>
+            <h2>Pergunta 3: Escreva um exemplo de senha forte</h2>
+            <form>
+                <input type="password" id="p3" name="Pergunta3" placeholder="Digite uma senha">
+            </form>
+        </section>
+
+        <!-- Pergunta 4 -->
+        <section>
+            <h2>Pergunta 4: Em que ano o HTML lançou sua primeira versão?</h2>
+            <form>
+                <input type="date" name="Pergunta4" id="p4">
+            </form>
+        </section>
+
+        <!-- Pergunta 5 -->
+        <section>
+            <h2>Pergunta 5: Quais dessas tecnologias são consideradas linguagens de programação?</h2>
+            <form>
+                <input type="checkbox" name="Pergunta5" id="p5a" value="JavaScript">
+                <label for="p5a">JavaScript</label><br>
+                <input type="checkbox" name="Pergunta5" id="p5b" value="Java">
+                <label for="p5b">Java</label><br>
+                <input type="checkbox" name="Pergunta5" id="p5c" value="HTML">
+                <label for="p5c">HTML</label><br>
+                <input type="checkbox" name="Pergunta5" id="p5d" value="CSS">
+                <label for="p5d">CSS</label><br>
+            </form>
+        </section>
+
+        <!-- Pergunta 6 -->
+        <section>
+            <h2>Pergunta 6: Faça o upload de um arquivo contendo código HTML</h2>
+            <form>
+                <input type="file" id="p6" name="Pergunta6" accept=".html">
+            </form>
+        </section>
+
+        <!-- Pergunta 7 -->
+        <section>
+            <h2>Pergunta 7: Selecione o atributo do input que define o seu tipo</h2>
+            <form>
+                <select name="Pergunta7" id="p7">
+                    <option value="id">id</option>
+                    <option value="type">type</option>
+                    <option value="placeholder">placeholder</option>
+                </select>
+            </form>
+        </section>
+
+        <!-- Pergunta 8 -->
+        <section>
+            <h2>Pergunta 8: Qual linguagem de programação é representada pelo logotipo abaixo?</h2>
+            <figure>
+                <img src="logo.png" alt="Logotipo de uma linguagem de programação"><br>
+                <figcaption>Figura 1: Logotipo de uma linguagem de programação</figcaption>
+            </figure>
+            <input type="text" name="Pergunta8" id="p8" placeholder="Digite sua resposta">
+        </section>
+
+        <!-- Tabela de Pontuação -->
+        <section>
+            <h2>Tabela de Pontuação</h2>
+            <table border="1">
+                <thead>
+                    <tr>
                         <th>Pontuação</th>
                         <th>Avaliação</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                     <tr>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
                         <td>0-4</td>
-                        <td>Não desista! Você vai chegar lá</td>
-                     <tr>
+                        <td>Não desista! Você vai chegar lá.</td>
+                    </tr>
+                    <tr>
                         <td>5-8</td>
                         <td>Se esforce um pouco mais!</td>
-                     </tr>
-                     <tr>
-                        <td>8-10</td>
+                    </tr>
+                    <tr>
+                        <td>9-10</td>
                         <td>Parabéns! Seu conhecimento em programação é muito bom.</td>
-                     </tr>
-                    <thead>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">Boa sorte na próxima! Continue estudando para evoluir mais.</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
 
-                    </thead>
-                     
-                    </tbody>
-                    <tfoot>
-                        <tr>
-                            <td colspan="2">Boa sorte na próxima! Continue estudando para evoluir mais.</td>
-                        </tr>
-                    </tfoot>
-                </table>
-            </section>
-            <!--Lista de respostas-->
-            <section>
-                <h2>Verifique suas respostas</h2>
-                <details>
-                    <summary>Clique aqui para ver as respostas</summary>
-                 <ol>
-                     <li>HTML</li>
-                     <li>Dominio</li>
-                     <li>a23@12</li>
-                     <li>1991</li>
-                     <li>Javascript, Java</li>
-                     <li>O arquivo deve ter extensão .html</li>
-                     <li>Type</li>
-                     <li>Java</li>
-                 </ol>
-                </details>
-            </section>
-            <!--Formulário de feedback-->
-            <section>
-                <h2>Nos dê o seu feedback</h2>
-                <form>
-                    <fieldset>
-                        <legend>Informações de contato</legend>
+        <!-- Lista de Respostas -->
+        <section>
+            <h2>Verifique suas respostas</h2>
+            <details>
+                <summary>Clique aqui para ver as respostas</summary>
+                <ol>
+                    <li>HTML</li>
+                    <li>Domínio</li>
+                    <li>a23@12</li>
+                    <li>1991</li>
+                    <li>JavaScript, Java</li>
+                    <li>O arquivo deve ter extensão .html</li>
+                    <li>type</li>
+                    <li>Java</li>
+                </ol>
+            </details>
+        </section>
+
+        <!-- Feedback -->
+        <section>
+            <h2>Nos dê o seu feedback</h2>
+            <form>
+                <fieldset>
+                    <legend>Informações de contato</legend>
                     <label for="name">Nome:</label>
                     <input type="text" name="name" id="name"><br>
-                    <label for="Email">Email:</label>
-                    <input type="text" name="Email" id="Email"><br>
-                    <label for="Coments">Comentários:</label><br>
-                    <textarea name="Comentários" id="Comentários" rows="4" cols="50" placeholder="Compartilhe sua experiência aqui..."></textarea><br>
-                    <button onclick="alert('FEEDBACK ENVIADO')">Envie seu feedback</button>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email"><br>
+                    <label for="comentarios">Comentários:</label><br>
+                    <textarea name="comentarios" id="comentarios" rows="4" cols="50" placeholder="Compartilhe sua experiência aqui..."></textarea><br>
+                    <button type="button" onclick="alert('FEEDBACK ENVIADO')">Enviar feedback</button>
                 </fieldset>
+            </form>
+        </section>
+    </main>
 
-                </form>
-            </section>
-        </main>
-        <footer>
-            <p class="paragrafo-footer">&copyQuiz de programadores. Todos os direitos reservados</p>
-            <p class="paragrafro-footer">Para conhecer mais sobre mim <a href="sobremim.html" target="_blank">clique aqui</a></p>
-        </footer>
-    </body>
-
+    <footer>
+        <p class="paragrafo-footer">&copy; Quiz de programadores. Todos os direitos reservados.</p>
+        <p class="paragrafo-footer">Para conhecer mais sobre mim <a href="sobremim.html" target="_blank">clique aqui</a>.</p>
+    </footer>
+</body>
 </html>
+
+
